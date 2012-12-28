@@ -80,7 +80,7 @@
     $('.file-input-wrapper input[type=file]').change(function(){
 
       // Remove any previous file names
-      $(this).parent().next().has('file-input-name').remove();
+      $(this).parent().next('.file-input-name').remove();
       $(this).parent().after('<span class="file-input-name">'+$(this).val().replace('C:\\fakepath\\','')+'</span>');
 
     });
